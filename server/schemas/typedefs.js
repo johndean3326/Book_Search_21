@@ -44,4 +44,9 @@ const typeDefs = gql`
 `;
 
 // export the typeDefs
+// import { makeExecutableSchema } from 'apollo-server-express';
+// export default makeExecutableSchema({
+// 	typeDefs: [AppSchema],
+// 	resolvers: Resolvers
+// });
 module.exports = typeDefs;
