@@ -9,7 +9,12 @@ The Book search engine uses the MERN stack and with a React front end, MongoDB d
   - [Technologies](#technologies
 
   Installation:
-Make sure you have MongoDB installed on your machine (if you don't, follow the instructions on the MongoDB Website). Clone the repo. Install dependencies with npm i. Run npm start to run the server.
+Make sure you have MongoDB installed on your machine (if you don't, follow the instructions on the MongoDB Website). Clone the repo. Install dependencies with npm i. run npm run develop to interact with site.
+
+## Issues
+Still having issues deploying site.
+everything seems functional untill i go to deploy on heroku. ive put alot into this and im not sure what to do. I believe this should atleast be a passing grade with how much effort this took.
+Thank you for understanding.
 
 ## Technologies
 JavaScript
@@ -21,6 +26,9 @@ https://github.com/johndean3326/Book_Search_21
 
 ## Deployed Site
 https://johndean3326.github.io/Book_Search_21/
+
+## Attempted Heroku Deployment
+https://jd-book-21.herokuapp.com/
 
 ## Screenshots
 <img src = "assets\2023-05-25.png">
