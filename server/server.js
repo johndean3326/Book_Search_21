@@ -6,7 +6,7 @@ const path = require('path');
 
 
 const { authMiddleware } = require("./utils/auth");
-const { typeDefs, resolvers } = require('./schemas').default;
+const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
 const app = express();
