@@ -1,4 +1,5 @@
-const typeDefs = require("server\schemas\typeDefs.js");
-const resolvers = require("./resolvers");
+const typeDefs = require('./typeDefs');
+const resolvers = require('./resolvers');
 
-module.exports={typeDefs, resolvers}
+// Exports the contents of typeDefs and resolvers to be used elsewhere in the project.
+module.exports = { typeDefs, resolvers };
