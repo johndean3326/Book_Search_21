@@ -7,11 +7,12 @@ import {
   Card,
   Row
 } from 'react-bootstrap';
-import Auth from '../utils/auth';
+
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
-// Imports the SAVE_BOOK mutation
-import { SAVE_BOOK } from '../utils/mutations';
 import { useMutation } from '@apollo/client';
+import { SAVE_BOOK } from '../utils/mutations';
+
+import Auth from '../utils/auth';
 
 const SearchBooks = () => {
   // create state for holding returned google api data
@@ -73,9 +74,10 @@ const SearchBooks = () => {
       return false;
     }
     // Runs the saveBook mutation and will save the new book to be saved into the user's savedBooks array.
+   
     try {
-        const { data } = await saveBook({
-        variables: { newBook: bookToSave },
+      const { data } = await saveBook({
+        variables: { bookData: { ...bookToSave } },
       });
 
       // if book successfully saves to user's account, save book id to state
